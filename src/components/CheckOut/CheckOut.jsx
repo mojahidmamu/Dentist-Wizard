@@ -1,5 +1,5 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const CheckOut = () => {
   const location = useLocation();
@@ -22,7 +22,7 @@ const CheckOut = () => {
           <div className="max-w-md">
             <h1 className="mb-5 text-5xl font-bold">{service.treatment}</h1>
             <p className="mb-5">{service.description}</p>
-            <button className="btn btn-primary">Make Appoinment </button>
+           <Link to='/appointment'> <button className="btn btn-primary">Make Appoinment </button></Link>
           </div>
         </div>
       </div>

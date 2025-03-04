@@ -50,46 +50,50 @@ const router = createBrowserRouter([
         element: <Login></Login>,
       },
       {
-        path: '/register',
-        element: <Register></Register>
+        path: "/register",
+        element: <Register></Register>,
       },
       {
-        path: '/details',
-        element: <CheckOut></CheckOut>
-      }
-       
-    //   {
-    //     path: "/details/:id",
-    //     element: <Details></Details>,
-    //     loader: async ({ params }) => {
-    //       try {
-    //         console.log("Received ID from URL:", params.id);
-        
-    //         const res = await fetch("/service.json"); // Fetch data
-    //         if (!res.ok) {
-    //           throw new Error("Failed to load data");
-    //         }
-        
-    //         const data = await res.json();
-    //         console.log("Fetched Data:", data);
-        
-    //         // Ensure id types match (string or number)
-    //         const singleData = data.find((d) => String(d.id) === params.id);
-        
-    //         console.log("Found Data:", singleData);
-        
-    //         if (!singleData) {
-    //           throw new Response("Data not found", { status: 404 });
-    //         }
-        
-    //         return singleData;
-    //       } catch (error) {
-    //         console.error("Error:", error);
-    //         throw new Response("Internal Server Error", { status: 500 });
-    //       }
-    //     }
-        
-    //   },
+        path: "/details",
+        element: <CheckOut></CheckOut>,
+      },
+      {
+        path: "/appointment",
+        element: <MyAppionments></MyAppionments>,
+      },
+
+      //   {
+      //     path: "/details/:id",
+      //     element: <Details></Details>,
+      //     loader: async ({ params }) => {
+      //       try {
+      //         console.log("Received ID from URL:", params.id);
+
+      //         const res = await fetch("/service.json"); // Fetch data
+      //         if (!res.ok) {
+      //           throw new Error("Failed to load data");
+      //         }
+
+      //         const data = await res.json();
+      //         console.log("Fetched Data:", data);
+
+      //         // Ensure id types match (string or number)
+      //         const singleData = data.find((d) => String(d.id) === params.id);
+
+      //         console.log("Found Data:", singleData);
+
+      //         if (!singleData) {
+      //           throw new Response("Data not found", { status: 404 });
+      //         }
+
+      //         return singleData;
+      //       } catch (error) {
+      //         console.error("Error:", error);
+      //         throw new Response("Internal Server Error", { status: 500 });
+      //       }
+      //     }
+
+      //   },
     ],
   },
 ]);
