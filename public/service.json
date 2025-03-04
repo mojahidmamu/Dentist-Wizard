@@ -1,0 +1,58 @@
+[
+  {
+    "id": "1",
+    "image": "https://i.ibb.co.com/XkzGJ7Ns/pexels-cedric-fauntleroy-4269362.jpg",
+    "cost": 120,
+    "treatment": "Teeth Whitening",
+    "description": "Brighten your smile with professional whitening."
+  },
+  {
+    "id": "2",
+    "image": "https://i.ibb.co.com/23xz9V2L/pexels-eye4dtail-298611.jpg",
+    "cost": 200,
+    "treatment": "Dental Implants",
+    "description": "Replace missing teeth with durable implants."
+  },
+  {
+    "id": "3",
+    "image": "https://i.ibb.co.com/whmnYdB4/pexels-fitsumassefa-532786.jpg",
+    "cost": 150,
+    "treatment": "Root Canal",
+    "description": "Save and restore infected teeth effectively."
+  },
+  {
+    "id": "4",
+    "image": "https://i.ibb.co.com/LX7yR1qj/pexels-fr3nks-305566.jpg",
+    "cost": 90,
+    "treatment": "Dental Cleaning",
+    "description": "Professional cleaning to maintain oral health."
+  },
+  {
+    "id": "5",
+    "image": "https://i.ibb.co.com/3mDLHvwn/pexels-shvetsa-3845653.jpg",
+    "cost": 180,
+    "treatment": "Tooth Extraction",
+    "description": "Remove damaged or decayed teeth safely."
+  },
+  {
+    "id": "6",
+    "image": "https://i.ibb.co.com/201Wxvgf/pexels-pixabay-208474.jpg",
+    "cost": 250,
+    "treatment": "Braces",
+    "description": "Align and straighten your teeth for a perfect smile."
+  },
+  {
+    "id": "7",
+    "image": "https://i.ibb.co.com/V0VwysG1/pexels-fr3nks-305564.jpg",
+    "cost": 300,
+    "treatment": "Veneers",
+    "description": "Enhance your teeth appearance with custom veneers."
+  },
+  {
+    "id": "8",
+    "image": "https://i.ibb.co.com/n8ZPLkCS/pexels-olly-3779709.jpg",
+    "cost": 220,
+    "treatment": "Gum Surgery",
+    "description": "Treat gum issues and improve oral health."
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "reviewId": 1,
+    "name": "John Doe",
+    "image": "https://randomuser.me/api/portraits/men/1.jpg",
+    "review": "Great product! Highly recommend it."
+  },
+  {
+    "reviewId": 2,
+    "name": "Jane Smith",
+    "image": "https://randomuser.me/api/portraits/women/2.jpg",
+    "review": "Excellent service and fast delivery."
+  },
+  {
+    "reviewId": 3,
+    "name": "Michael Brown",
+    "image": "https://randomuser.me/api/portraits/men/3.jpg",
+    "review": "Quality could be better, but overall satisfied."
+  },
+  {
+    "reviewId": 4,
+    "name": "Emily Johnson",
+    "image": "https://randomuser.me/api/portraits/women/4.jpg",
+    "review": "Amazing experience, will buy again!"
+  },
+  {
+    "reviewId": 5,
+    "name": "David Wilson",
+    "image": "https://randomuser.me/api/portraits/men/5.jpg",
+    "review": "Good value for money, but packaging needs improvement."
+  },
+  {
+    "reviewId": 6,
+    "name": "Sarah Lee",
+    "image": "https://randomuser.me/api/portraits/women/6.jpg",
+    "review": "Customer support was very helpful."
+  },
+  {
+    "reviewId": 7,
+    "name": "Chris Martinez",
+    "image": "https://randomuser.me/api/portraits/men/7.jpg",
+    "review": "Would give 6 stars if I could!"
+  },
+  {
+    "reviewId": 8,
+    "name": "Anna White",
+    "image": "https://randomuser.me/api/portraits/women/8.jpg",
+    "review": "Not bad, but expected better."
+  }
+]
