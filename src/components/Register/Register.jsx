@@ -1,12 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
+import { authContext } from "../AuthProvider/AuthProvider";
 
 const Register = () => {
+  const {handleRegister} = useContext(authContext)
+  
   const handleSubmit = (e) => {
-    const name = e.target.namne.value;
+    e.preventDefault();
+    const name = e.target.name.value;
     const email = e.target.email.value;
     const photo = e.target.photo.value;
     const password = e.target.password.value;
     const conPassword = e.target.conPassword.value;
+    console.log(name, email, photo, password, conPassword);
+
+    handleRegister(email, password )
   };
   return (
     <div>
@@ -18,7 +25,7 @@ const Register = () => {
           <h1 className="font-bold text-2xl  my-3"> Name</h1>
           <input
             type="text"
-            name=" name"
+            name="name"
             placeholder=" Name"
             className="input input-ghost"
           />

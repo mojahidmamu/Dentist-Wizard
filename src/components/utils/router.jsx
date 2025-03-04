@@ -7,6 +7,7 @@ import Profile from "../Profile/Profile";
 import BookMark from "../Banner/BookMark";
 import Login from "../Login/Login";
 import Register from "../Register/Register";
+import CheckOut from "../CheckOut/CheckOut";
 // import Details from "../Details/Details";
 
 const router = createBrowserRouter([
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
       {
         path: '/register',
         element: <Register></Register>
+      },
+      {
+        path: '/checkOut',
+        element: <CheckOut></CheckOut>
       }
        
     //   {
