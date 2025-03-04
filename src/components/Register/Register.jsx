@@ -1,12 +1,19 @@
 import React from "react";
 
 const Register = () => {
+  const handleSubmit = (e) => {
+    const name = e.target.namne.value;
+    const email = e.target.email.value;
+    const photo = e.target.photo.value;
+    const password = e.target.password.value;
+    const conPassword = e.target.conPassword.value;
+  };
   return (
     <div>
       <h1 className="font-bold text-4xl text-green-600 text-center border-b-2 my-5 pb-3">
         REGISTER
       </h1>
-      <form className="ml-24 mx-auto" action="">
+      <form onSubmit={handleSubmit} className="ml-24 mx-auto" action="">
         <div>
           <h1 className="font-bold text-2xl  my-3"> Name</h1>
           <input
@@ -29,7 +36,7 @@ const Register = () => {
           <h1 className="font-bold text-2xl  my-3">Photo URL</h1>
           <input
             type="text"
-            name="first name"
+            name="photo"
             placeholder="Photo URL"
             className="input input-ghost"
           />
@@ -43,6 +50,18 @@ const Register = () => {
             className="input input-ghost"
           />
         </div>
+        <div>
+          <h1 className="font-bold text-2xl  my-3">Confirm Password</h1>
+          <input
+            type="password"
+            name="conPassword"
+            placeholder="Confirm Password"
+            className="input input-ghost"
+          />
+        </div>
+        <button type="submit" className="btn btn-secondary my-3">
+          Regitar
+        </button>
       </form>
     </div>
   );
