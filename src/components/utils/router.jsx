@@ -8,6 +8,7 @@ import BookMark from "../Banner/BookMark";
 import Login from "../Login/Login";
 import Register from "../Register/Register";
 import CheckOut from "../CheckOut/CheckOut";
+import AppointmentModal from "../AppointmentModal/AppointmentModal";
 // import Details from "../Details/Details";
 
 const router = createBrowserRouter([
@@ -58,8 +59,8 @@ const router = createBrowserRouter([
         element: <CheckOut></CheckOut>,
       },
       {
-        path: "/appointment",
-        element: <MyAppionments></MyAppionments>,
+        path: "/appointmentModal",
+        element:  <AppointmentModal></AppointmentModal>
       },
 
       //   {
