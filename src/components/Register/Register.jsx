@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { authContext } from "../AuthProvider/AuthProvider";
 
 const Register = () => {
-  const {handleRegister} = useContext(authContext)
+  const {handleRegister, handleLogOUt} = useContext(authContext)
   
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -69,6 +69,7 @@ const Register = () => {
         <button type="submit" className="btn btn-secondary my-3">
           Regitar
         </button>
+        <button onClick={handleLogOUt} className="btn btn-primary mx-3">Logout</button>
       </form>
     </div>
   );

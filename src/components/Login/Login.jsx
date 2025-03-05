@@ -3,16 +3,20 @@ import { Link } from "react-router-dom";
 import { authContext } from "../AuthProvider/AuthProvider";
 
 const Login = () => {
-  const { handleGoogleLogin } = useContext(authContext);
+  const { handleGoogleLogin,  handeLogin } = useContext(authContext);
   // console.log(contextValue);
 
   const handleLoginButtn = (e) => {
     e.preventDefault();
-    const form = e.targer;
-    const name = from.name.value;
-    const email = from.email.value;
-    const address = from.address.value;
-    const password = from.password.value;
+    const firstName = e.target.firstName.value;
+    const lastName = e.target.lastName.value;
+    const email = e.target.email.value;
+    const address = e.target.address.value;
+    const password = e.target.password.value;
+    const confirmPassword = e.target.confirmPassword.value;
+    console.log(name, email, photo, password, address, confirmPassword);
+
+    handeLogin(email, password )
   };
 
   return (
@@ -23,7 +27,9 @@ const Login = () => {
       </h1>
 
       <Link to="/register">
-        <h1 className="font-bold text-2xl text-red-500">Are you new in my website ? Please Registration... </h1>
+        <h1 className="font-bold text-2xl text-red-500">
+          Are you new in my website ? Please Registration...{" "}
+        </h1>
         <button className="btn btn-outline my-5 mx-5">Register</button>
       </Link>
       <button onClick={handleGoogleLogin} className="btn btn-primary">
@@ -34,7 +40,7 @@ const Login = () => {
         <h1 className="font-bold text-2xl  my-3">First Name</h1>
         <input
           type="text"
-          name="first name"
+          name="firstName"
           placeholder="First Name"
           className="input input-ghost"
         />
@@ -43,7 +49,7 @@ const Login = () => {
         <h1 className="font-bold text-2xl  my-3">Last Name</h1>
         <input
           type="text"
-          name="last name"
+          name="lastName"
           placeholder="Last Name"
           className="input input-ghost"
         />
@@ -79,7 +85,7 @@ const Login = () => {
         <h1 className="font-bold text-2xl my-3">Confirm Password</h1>
         <input
           type="password"
-          name="confirm password"
+          name="confirmPassword"
           placeholder="Make sure your password"
           className="input input-ghost"
         />
@@ -87,7 +93,7 @@ const Login = () => {
       <div className="flex gap-5">
         <button onClick={handleLoginButtn} className="btn btn-primary my-5">
           Login
-        </button>
+        </button> 
         <Link to="/">
           <button className="btn btn-outline my-5">Go Home</button>
         </Link>
