@@ -12,10 +12,7 @@ const AppointmentModal = () => {
       </button>
       <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
         <div className="modal-box">
-          <h3 className="font-bold text-lg">Hello!</h3>
-          <p className="py-4">
-            Press ESC key or click the button below to close
-          </p>
+           
           <div>
             <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
               <div className="card-body">
@@ -29,6 +26,7 @@ const AppointmentModal = () => {
                   <input type="text" className="input" placeholder="Address" />
                   <label className="fieldset-label">Appoinment Date</label>
                   <input type="date" className="input" placeholder="Date" />
+                  <label className="fieldset-label">Password</label>
                   <input
                     type="password"
                     className="input"

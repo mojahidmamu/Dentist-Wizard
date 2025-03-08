@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { authContext } from "../AuthProvider/AuthProvider";
 
 const Login = () => {
-  const { handleGoogleLogin,  handeLogin } = useContext(authContext);
+  const { handleGoogleLogin, handeLogin } = useContext(authContext);
   // console.log(contextValue);
 
   const handleLoginButtn = (e) => {
@@ -14,9 +14,18 @@ const Login = () => {
     const address = e.target.address.value;
     const password = e.target.password.value;
     const confirmPassword = e.target.confirmPassword.value;
-    console.log(name, email, photo, password, address, confirmPassword);
+    
+    console.log(
+      firstName,
+      lastName,
+      email,
+      photo,
+      password,
+      address,
+      confirmPassword
+    );
 
-    handeLogin(email, password )
+    handeLogin(email, password);
   };
 
   return (
@@ -93,7 +102,7 @@ const Login = () => {
       <div className="flex gap-5">
         <button onClick={handleLoginButtn} className="btn btn-primary my-5">
           Login
-        </button> 
+        </button>
         <Link to="/">
           <button className="btn btn-outline my-5">Go Home</button>
         </Link>
