@@ -1,12 +1,12 @@
 import React, { createContext, useState } from "react";
 import { Outlet } from "react-router-dom";
-import auth from "../Firebase/firebase.config";
-import {
-  GithubAuthProvider,
-  GoogleAuthProvider,
-  signInWithPopup,
-  TwitterAuthProvider,
-} from "firebase/auth";
+// import auth from "../Firebase/firebase.config";
+// import {
+//   GithubAuthProvider,
+//   GoogleAuthProvider,
+//   signInWithPopup,
+//   TwitterAuthProvider,
+// } from "firebase/auth";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 // export const authContext = createContext();

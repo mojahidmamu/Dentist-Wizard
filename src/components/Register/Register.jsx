@@ -15,6 +15,7 @@ const Register = () => {
     console.log(name, email, photo, password, conPassword);
 
     handleRegister(email, password )
+    handleLogOUt(auth )
   };
   return (
     <div>
