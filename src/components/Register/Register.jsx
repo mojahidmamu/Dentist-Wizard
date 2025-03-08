@@ -11,6 +11,7 @@ const Register = () => {
     const photo = e.target.photo.value;
     const password = e.target.password.value;
     const conPassword = e.target.conPassword.value;
+    
     console.log(name, email, photo, password, conPassword);
 
     handleRegister(email, password )
