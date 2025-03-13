@@ -8,8 +8,7 @@ import {
   TwitterAuthProvider,
   onAuthStateChanged,
 } from "firebase/auth";
-import React, { createContext, useEffect, useState } from "react";
-// import auth from "../Firebase/firebase.config";
+import React, { createContext, useEffect, useState } from "react"; 
 export const authContext = createContext();
 
 const AuthProvider = (props) => {
