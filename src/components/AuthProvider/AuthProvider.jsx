@@ -26,7 +26,8 @@ const AuthProvider = (props) => {
   };
 
   const handleGithubLogin = () => {
-    signInWithPopup(auth, githubProvider).then((result) =>
+    signInWithPopup(auth
+    , githubProvider).then((result) =>
       setUser(result.user)
     );
   };
@@ -58,14 +59,14 @@ const AuthProvider = (props) => {
     handleTwitterLogin,
   };
 
-  useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
-      console.log(currentUser);
-      return () => {
-        unsubscribe()
-      };
-    });
-  }, []);
+  // useEffect(() => {
+  //   const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+  //     console.log(currentUser);
+  //     return () => {
+  //       unsubscribe()
+  //     };
+  //   });
+  // }, []);
 
   //   console.log(props);
   return (
