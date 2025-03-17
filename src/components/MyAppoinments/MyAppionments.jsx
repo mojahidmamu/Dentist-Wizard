@@ -96,10 +96,10 @@ const MyAppointments = () => {
             key={appointment.id}
             className="bg-white p-5 shadow-lg rounded-lg"
           >
-            <h2 className="text-xl font-semibold mb-2">{appointment.doctor}</h2>
-            <p className="text-gray-600">
+            <h2 className="text-2xl mb-2 font-bold">{appointment.doctor}</h2>
+            <h3 className="text-green-800 font-semibold text-xl">
               Qualification: {appointment.qualification}
-            </p>
+            </h3>
             <p className="text-gray-600">Date: {appointment.date}</p>
             <p className="text-gray-600">Time: {appointment.time}</p>
             <p className="text-gray-600">Status: {appointment.status}</p>
