@@ -1,4 +1,5 @@
 import React from 'react';
+import pfofileImg from '../../assets/profile.bmp'
 
 const Profile = () => {
   return (
@@ -6,9 +7,9 @@ const Profile = () => {
       <h1 className="text-4xl font-bold mb-6">My Profile</h1>
       <div className="bg-white p-6 rounded-lg shadow-lg max-w-lg mx-auto">
         <img 
-          src="https://via.placeholder.com/150" 
+          src={pfofileImg}
           alt="Profile Picture" 
-          className="w-32 h-32 rounded-full mx-auto mb-4"
+          className="w-32 h-32 rounded-lg mx-auto mb-4"
         />
         <h2 className="text-2xl font-semibold text-center mb-2">Abdullah Al Mojahid</h2>
         <p className="text-gray-600 text-center mb-4">Web Developer | React Enthusiast</p>
