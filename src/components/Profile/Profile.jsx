@@ -9,10 +9,10 @@ const Profile = () => {
         <img 
           src={pfofileImg}
           alt="Profile Picture" 
-          className="w-32 h-32 rounded-lg mx-auto mb-4"
+          className="w-32 h-32 rounded-lg  mx-auto mb-4"
         />
         <h2 className="text-2xl font-semibold text-center mb-2">Abdullah Al Mojahid</h2>
-        <p className="text-gray-600 text-center mb-4">Web Developer | React Enthusiast</p>
+        <p className="text-gray-600 text-center mb-4">Full Stack Web Developer | React Enthusiast</p>
         <p className="text-gray-700 mb-2"><strong>Email:</strong> abdullahallmojahidstudent@example.com</p>
         <p className="text-gray-700 mb-2"><strong>Location:</strong> Chittagong , Bangladesh</p>
         <p className="text-gray-700 mb-2"><strong>Skills:</strong> HTML, CSS, JavaScript, React, Tailwind CSS, Firebase, MongoDB, Git, Github etc...</p>
