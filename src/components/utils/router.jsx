@@ -1,7 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../MainLayout/MainLayout";
 import Home from "../Home/Home";
-import AllTreatments from "../AllTreatments/AllTreatments";
 import MyAppionments from "../MyAppoinments/MyAppionments";
 import Profile from "../Profile/Profile";
 import BookMark from "../Banner/BookMark";
@@ -9,6 +8,8 @@ import Login from "../Login/Login";
 import Register from "../Register/Register";
 import CheckOut from "../CheckOut/CheckOut";
 import AppointmentModal from "../AppointmentModal/AppointmentModal";
+import Apps from "../../components/Apps/Apps";
+import Installation from "../Installation/Installation";
 // import Details from "../Details/Details";
 
 const router = createBrowserRouter([
@@ -30,21 +31,17 @@ const router = createBrowserRouter([
         },
       },
       {
-        path: "/AllTreatments",
-        element: <AllTreatments></AllTreatments>,
-        loader: () => fetch("/service.json"),
+        path: "/apps",
+        element: <Apps></Apps>,
+        // loader: () => fetch("/service.json"),
       },
       {
-        path: "/myAppoinments",
-        element: <MyAppionments></MyAppionments>,
+        path: "/installation",
+        element: <Installation></Installation>,
       },
       {
         path: "/profile",
         element: <Profile></Profile>,
-      },
-      {
-        path: "/bookMark",
-        element: <BookMark></BookMark>,
       },
       {
         path: "/login",
@@ -54,14 +51,14 @@ const router = createBrowserRouter([
         path: "/register",
         element: <Register></Register>,
       },
-      {
-        path: "/details",
-        element: <CheckOut></CheckOut>,
-      },
-      {
-        path: "/appointmentModal",
-        element:  <AppointmentModal></AppointmentModal>
-      },
+      // {
+      //   path: "/details",
+      //   element: <CheckOut></CheckOut>,
+      // },
+      // {
+      //   path: "/appointmentModal",
+      //   element:  <AppointmentModal></AppointmentModal>
+      // },
 
       //   {
       //     path: "/details/:id",

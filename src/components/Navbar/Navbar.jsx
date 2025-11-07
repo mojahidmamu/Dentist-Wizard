@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css";
+import logo from "../../assets/image/logo.png";
 
 const Navbar = () => {
   const links = (
@@ -10,10 +11,10 @@ const Navbar = () => {
         <Link to="/">Home</Link>
       </li>
       <li>
-        <Link to="/AllTreatments">All Treatments</Link>
+        <Link to="/apps">Apps</Link>
       </li>
       <li>
-        <Link to="/myAppoinments">My appoinments</Link>
+        <Link to="/installation">Installation</Link>
       </li>
       <li>
         <Link to="/profile">Profile</Link>
@@ -48,12 +49,27 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl font-bold">TEETH WIZARD</a>
+        <a className="btn btn-ghost text-xl">
+          <div className="flex items-center gap-3">
+            <img className="h-8 w-auto" src={logo} alt="" />
+            <h3 className="font-bold uppercase" style={{ color: "#632EE3" }}>
+              Hero.IO
+            </h3>
+          </div>
+        </a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end">
+        <div className="navbar-end">
+          <a
+            className="btn text-white mr-3"
+            style={{ backgroundColor: "#632EE3" }}
+          >
+            Contribute
+          </a>
+        </div>
         <Link to="/login">
           <a className="btn btn-outline">Login</a>
         </Link>
