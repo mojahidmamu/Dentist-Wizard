@@ -55,7 +55,7 @@ const Login = () => {
         />
       </div>
       <div>
-        <h1 className="font-bold text-2xl  my-3">Last Name</h1>
+        <h1 className="font-bold text-2xl  my-3">Last Name: </h1>
         <input
           type="text"
           name="lastName"
@@ -64,7 +64,7 @@ const Login = () => {
         />
       </div>
       <div>
-        <h1 className="font-bold text-2xl my-3">Email</h1>
+        <h1 className="font-bold text-2xl my-3">Email: </h1>
         <input
           type="email"
           name="email"
@@ -73,7 +73,7 @@ const Login = () => {
         />
       </div>
       <div>
-        <h1 className="font-bold text-2xl  my-3">Address</h1>
+        <h1 className="font-bold text-2xl  my-3">Address: </h1>
         <input
           type="text"
           name="address"

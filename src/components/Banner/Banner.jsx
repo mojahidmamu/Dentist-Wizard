@@ -17,7 +17,7 @@ const Banner = () => {
           </h1>
           <p className="py-6">
             Experience top-quality dental care for a brighter, healthier smile.
-            Book your appointment today!
+            Book your appointment today!!!
           </p>
          <Link to='bookMark'> <button className="btn btn-primary">BOOK NOW </button></Link>
         </div>
