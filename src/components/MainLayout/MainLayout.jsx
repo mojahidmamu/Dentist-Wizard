@@ -38,7 +38,7 @@ const MainLayout = () => {
   return (
     <div>
       {/* <authContext.Provider value={authData}> */}
-      <div className="">
+      <div>
         <Navbar></Navbar>
         <Outlet></Outlet>
         <Footer></Footer>
